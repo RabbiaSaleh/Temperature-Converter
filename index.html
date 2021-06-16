@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temperature Converter </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form class="temp-form">
+        <div class="temp">
+            <h1> Temperature Converter </h1>
+            <h2>(Farenheit = "F") <br>
+                <i id="icon" class="fa fa-arrows-v" style="font-size:25px"></i>
+                <br> (Celcuis = "C")</h2>
+            
+            <span class="temp-input">
+                <span class="p">
+                    Enter Temperature :
+                </span>   
+                <input id="input-temp" type="text">
+            </span> 
+            <span class="unit">
+                    <select id="temp-1" aria-label="Default select example">
+                        <option selected> Select Unit</option>
+                        <option  value="f"> Farenheit 'F'</option>
+                        <option  value="c">Celcuis 'C'</option>
+                      </select>
+            </span>
+            <div class="btn">
+                <button onclick="convert()"> Convert</button>
+            </div>
+            <div class="result">
+                <span>Result : </span>
+                <input id="result" type="text">
+            </div>
+        </div>
+    </form> 
+         
+<script src="app.js"></script> 
+</body>        
+</html>
